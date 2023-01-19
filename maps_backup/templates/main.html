@@ -10,11 +10,11 @@
     </head>
     <body>
         <ul id="dropdown1" class="dropdown-content">
-            <li><a href="#!">Ativos</a></li>
-            <li><a href="#!">Emissores</a></li>
-            <li><a href="#!">Investidores</a></li>
-            <li><a href="#!">Administradores</a></li>
-            <li><a href="#!">Agentes de Custódia</a></li>
+            <li><a href="{% url 'cadastroativos' %}">Ativos</a></li>
+            <li><a href="{% url 'cadastroemissores' %}">Emissores</a></li>
+            <li><a href="{% url 'cadastroinvestidores' %}">Investidores</a></li>
+            <li><a href="{% url 'cadastroadministradores' %}">Administradores</a></li>
+            <li><a href="{% url 'agentesdecustodia' %}">Agentes de Custódia</a></li>
         </ul>
         <ul id="dropdown2" class="dropdown-content">
             <li><a href="#!">Consulta Movimentações</a></li>
@@ -41,11 +41,18 @@
         </nav>
 
 
+
+
+            
         {% block content %}
 
 
 
         {% endblock %}
+
+
+        
+
 
 
 

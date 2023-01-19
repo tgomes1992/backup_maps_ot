@@ -24,5 +24,11 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("" ,  index)
+    path("" ,  index) , 
+    path("cadastroativos",cadastroAtivos ,  name='cadastroativos') , 
+    path("cadastroemissores",cadastroemissores ,  name='cadastroemissores'), 
+    path("investidores",cadastrosinvestidores ,  name='cadastroinvestidores'),       
+    path("cadastroagentescustodia",agentescustodia ,  name='agentesdecustodia') ,    
+    path("cadastroadministradores",cadastroadministradores ,  name='cadastroadministradores')  
+    
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
