@@ -1,0 +1,61 @@
+<html>
+    <head>
+
+        {% load static %}  
+
+        <link href="{% static 'materialize/css/materialize.css' %}" rel="stylesheet" /> 
+        <script src="{% static 'jquery.js' %}"></script>
+        <script src="{% static 'app.js' %}"></script>
+        
+    </head>
+    <body>
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">Ativos</a></li>
+            <li><a href="#!">Emissores</a></li>
+            <li><a href="#!">Investidores</a></li>
+            <li><a href="#!">Administradores</a></li>
+            <li><a href="#!">Agentes de Custódia</a></li>
+        </ul>
+        <ul id="dropdown2" class="dropdown-content">
+            <li><a href="#!">Consulta Movimentações</a></li>
+            <li><a href="#!">Consulta Movimentações Escriturais</a></li>
+            <li><a href="#!">Bloqueios/Desbloqueios</a></li>
+        </ul>
+        <ul id="dropdown3" class="dropdown-content">
+            <li><a href="#!">Consulta Posições</a></li>
+        </ul>        
+        <ul id="dropdown4" class="dropdown-content">
+            <li><a href="#!">Agenda de Eventos</a></li>
+            <li><a href="#!">Consulta de Eventos</a></li>
+        </ul>
+        <nav>
+            <div class="nav-wrapper">
+                <ul class="right">
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Cadastros</a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Movimentações</a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown3">Posições</a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown4">Eventos</a></li>
+              </ul>
+            </div>
+        </nav>
+
+
+        {% block content %}
+
+
+
+        {% endblock %}
+
+
+
+
+
+
+
+
+    </body>
+
+
+        <script src="{% static 'materialize/js/materialize.js' %}"></script>
+</html>
